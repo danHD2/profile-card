@@ -1,4 +1,8 @@
 import "./App.css";
+import bgOne from "../images/bg-pattern-bottom.svg";
+import bgTwo from "../images/bg-pattern-top.svg";
+import bgCard from "../images/bg-pattern-card.svg";
+import profile from "../images/image-victor.jpg";
 
 function App() {
   return (
@@ -6,25 +10,21 @@ function App() {
       <div className="w-screen h-screen overflow-hidden grid justify-center items-center">
         <div className="w-screen h-screen absolute">
           <img
-            src="/images/bg-pattern-top.svg"
+            src={bgTwo}
             alt="bg1"
             className="absolute origin-center left-0 -translate-y-1/2"
           />
           <img
-            src="/images/bg-pattern-bottom.svg"
+            src={bgOne}
             alt="bg2"
             className="absolute origin-center right-0 translate-y-1/2"
           />
         </div>
         <div className="bg-white z-10 relative rounded-2xl shadow-2xl">
-          <img
-            src="/images/bg-pattern-card.svg"
-            alt="BG"
-            className="rounded-t-2xl"
-          />
+          <img src={bgCard} alt="BG" className="rounded-t-2xl" />
           <div className="flex flex-col items-center">
             <img
-              src="/images/image-victor.jpg"
+              src={profile}
               alt="profile"
               className="-translate-y-1/2 rounded-full border-white border-[5px] absolute"
             />
